@@ -71,7 +71,7 @@ check out https://dart.dev/interop/js-interop.
     git reset --hard
     git commit --allow-empty -m "Initial commit"
     git push origin gh-pages
-    git checkout main
+    git checkout master
     ```
 
 3. Copy the build output to the gh-pages branch: Copy the contents of the build directory to the root of the gh-pages branch:
@@ -81,7 +81,7 @@ check out https://dart.dev/interop/js-interop.
     git add .
     git commit -m "Deploy to GitHub Pages"
     git push origin gh-pages
-    git checkout main
+    git checkout master
     ```
 
 4. Configure GitHub Pages: Go to your repository settings on GitHub, scroll down to the "GitHub Pages" section, and select the gh-pages branch as the source for GitHub Pages.
