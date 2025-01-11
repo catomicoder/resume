@@ -1,12 +1,13 @@
+
 {
-  "name": "dart_web",
+  "name": "marc-b-resume",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --output-style compressed -o css/ scss/",
-    "sass:watch": "node-sass --output-style compressed -o css/ scss/ --watch",
+    "sass": "sass --style=compressed --no-source-map --update scss:css",
+    "sass:watch": "sass --style=compressed --no-source-map --watch scss:css",
     "serve": "browser-sync start --server --files 'css/*.css, *.html, js/*.js'",
     "start": "npm-run-all --parallel sass:watch serve",
     "deploy": "gh-pages -d ."
