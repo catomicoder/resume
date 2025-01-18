@@ -1,0 +1,32 @@
+
+{
+  "name": "marc-b-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --style=compressed --no-source-map --update scss:css",
+    "sass:watch": "sass --style=compressed --no-source-map --watch scss:css",
+    "serve": "browser-sync start --server --files 'css/*.css, *.html, js/*.js'",
+    "start": "npm-run-all --parallel sass:watch serve",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catomicoder/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catomicoder/resume/issues"
+  },
+  "homepage": "https://github.com/catomicoder/resume#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gh-pages": "^6.3.0",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
